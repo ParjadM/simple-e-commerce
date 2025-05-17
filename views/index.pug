@@ -1,0 +1,39 @@
+extends layout 
+block page-style
+  link(rel="stylesheet", href="styles/style.css")
+
+block layout-content 
+    div#content 
+        h1 Welcome to the E-commerce site
+        p This is a simple e-commerce site built with Node.js and Express.
+        p This site showcases a collection of games available for purchase.
+    div.parent
+        div 
+        div.product Diablo IV
+            //- Ars Technica. (2023, May). Diablo IV Lilith Artwork. Retrieved from https://cdn.arstechnica.net/wp-content/uploads/2023/05/D4_Lilith_3440x1440.png
+            img(src="img/D4.png", alt="Diablo IV" class="img")
+        div 
+        div.action Action
+            p Price: $69.99
+            button.Fbtn Buy Now
+        div 
+        div 
+        div.product Path of Exile II
+            //- Path of Exile. (2023, May). Path of Exile II Artwork. Retrieved from https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2694490/capsule_616x353.jpg?t=1745801545
+            img(src="img/PoE2.jpg", alt="Path of Exile 2" class="img")
+        div 
+        div.action Action
+            p Price: $39.99
+            button.Fbtn Buy Now
+        div 
+        div 
+        div.product Last Epoch
+            //- Last Epoch. (2023, May). Last Epoch Artwork. Retrieved from https://www.heypoorplayer.com/wp-content/uploads/2024/03/Last-Epoch-KE.jpeg
+            img(src="img/LE.jpg", alt="Last Epoch" class="img")
+        div 
+        div.action Action
+            p Price: $29.99
+            button.Fbtn Buy Now
+        div 
+
+

@@ -1,0 +1,80 @@
+/* 
+Color Palette:
+#ECFAE5
+#DDF6D2
+#CAE8BD
+#B0DB9C */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #ECFAE5;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#main {
+    flex-grow: 1; 
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(25px, 0.25fr) minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-rows: repeat(3, minmax(200px, 1fr)) repeat(2, minmax(0px, 0fr)); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 25px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.img {
+    width: 100px;
+    height: 100px;
+}
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+.Fbtn {
+    transition: transform 0.2s ease-in-out !important;
+    transform-origin: center !important;}
+.Fbtn:hover {
+    transform: scale(1.5) !important;
+}

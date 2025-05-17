@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    title #{title} | E-commerce
+    link(rel='stylesheet', href='styles/nav.css')
+    link(rel='stylesheet', href='styles/footer.css')
+    block page-style
+  body
+    header#header
+        include nav.pug
+    main#main
+        block layout-content
+    footer#footer
+        include footer.pug
